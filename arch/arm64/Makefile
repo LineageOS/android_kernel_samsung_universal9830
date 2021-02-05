@@ -66,7 +66,7 @@ asm-arch := armv8.2-a
 endif
 
 ifeq ($(CONFIG_SOC_EXYNOS9830), y)
-ifeq ($(cc-name),clang)
+ifneq ($(findstring clang,$(CC_VERSION_TEXT)),)
 KBUILD_CFLAGS   += -mcpu=cortex-a55
 KBUILD_AFLAGS   += -mcpu=cortex-a55
 ifeq ($(CONFIG_LD_IS_LLD), y)
