@@ -22,7 +22,11 @@
 
 #include "wlan_objmgr_psoc_obj.h"
 #include "cfg_nan_api.h"
+#if !defined(CONFIG_LTO)
 #include "../../core/src/nan_main_i.h"
+#else
+#include "nan_main_i.h"
+#endif
 #include "wlan_mlme_ucfg_api.h"
 #include "cfg_ucfg_api.h"
 #include "cfg_nan.h"

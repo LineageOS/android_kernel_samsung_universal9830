@@ -23,7 +23,11 @@
 #include "nan_ucfg_api.h"
 #include "nan_public_structs.h"
 #include "wlan_nan_api.h"
+#if !defined(CONFIG_LTO)
 #include "../../core/src/nan_main_i.h"
+#else
+#include "nan_main_i.h"
+#endif
 #include "scheduler_api.h"
 #include "wlan_objmgr_psoc_obj.h"
 #include "wlan_objmgr_pdev_obj.h"

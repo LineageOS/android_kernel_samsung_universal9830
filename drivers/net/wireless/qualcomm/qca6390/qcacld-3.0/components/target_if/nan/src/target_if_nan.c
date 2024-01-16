@@ -20,7 +20,11 @@
  * DOC: contains nan target if functions
  */
 
+#if !defined(CONFIG_LTO)
 #include "../../../nan/core/src/nan_main_i.h"
+#else
+#include "nan_main_i.h"
+#endif
 #include "nan_public_structs.h"
 #include "nan_ucfg_api.h"
 #include "target_if_nan.h"
