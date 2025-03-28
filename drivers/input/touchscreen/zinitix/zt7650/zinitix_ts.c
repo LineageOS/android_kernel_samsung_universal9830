@@ -1885,6 +1885,7 @@ static void zt_ts_fod_event_report(struct zt_ts_info *info, struct point_info to
 
 		atomic_set(&info->fod_pressed, 1);
 		sysfs_notify(&info->sec.fac_dev->kobj, NULL, "fod_pressed");
+		sysfs_notify(&info->sec.fac_dev->kobj, NULL, "scrub_pos");
 #ifdef CONFIG_SAMSUNG_PRODUCT_SHIP
 		input_info(true, &info->client->dev, "%s: FOD %s PRESS: %d\n", __func__,
 				touch_info.byte01.value_u8bit ? "NORMAL" : "LONG", info->scrub_id);
@@ -1903,6 +1904,7 @@ static void zt_ts_fod_event_report(struct zt_ts_info *info, struct point_info to
 
 		atomic_set(&info->fod_pressed, 0);
 		sysfs_notify(&info->sec.fac_dev->kobj, NULL, "fod_pressed");
+		sysfs_notify(&info->sec.fac_dev->kobj, NULL, "scrub_pos");
 #ifdef CONFIG_SAMSUNG_PRODUCT_SHIP
 		input_info(true, &info->client->dev, "%s: FOD RELEASE: %d\n", __func__, info->scrub_id);
 #else
@@ -1919,6 +1921,7 @@ static void zt_ts_fod_event_report(struct zt_ts_info *info, struct point_info to
 
 		atomic_set(&info->fod_pressed, 0);
 		sysfs_notify(&info->sec.fac_dev->kobj, NULL, "fod_pressed");
+		sysfs_notify(&info->sec.fac_dev->kobj, NULL, "scrub_pos");
 #ifdef CONFIG_SAMSUNG_PRODUCT_SHIP
 		input_info(true, &info->client->dev, "%s: FOD OUT: %d\n", __func__, info->scrub_id);
 #else
