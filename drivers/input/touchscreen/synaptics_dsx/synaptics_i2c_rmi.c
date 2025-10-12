@@ -669,8 +669,6 @@ static void synaptics_rmi4_release_all_finger(struct synaptics_rmi4_data *rmi4_d
 	input_report_key(rmi4_data->input_dev,
 			BTN_TOOL_FINGER, 0);
 #ifdef GLOVE_MODE
-	input_report_switch(rmi4_data->input_dev,
-			SW_GLOVE, false);
 	rmi4_data->touchkey_glove_mode_status = false;
 #endif
 #ifdef TSP_BOOSTER
@@ -962,12 +960,10 @@ static int synaptics_rmi4_f12_abs_report(struct synaptics_rmi4_data *rmi4_data,
 			if ((finger_status == OBJECT_GLOVE || finger_status == OBJECT_PASSIVE_STYLUS)
 					&& !rmi4_data->touchkey_glove_mode_status) {
 				rmi4_data->touchkey_glove_mode_status = true;
-				input_report_switch(rmi4_data->input_dev, SW_GLOVE, true);
 			}
 			if ((finger_status != OBJECT_GLOVE && finger_status != OBJECT_PASSIVE_STYLUS)
 					&& rmi4_data->touchkey_glove_mode_status) {
 				rmi4_data->touchkey_glove_mode_status = false;
-				input_report_switch(rmi4_data->input_dev, SW_GLOVE, false);
 			}
 #endif
 #ifdef REPORT_2D_W
@@ -3380,9 +3376,6 @@ static int synaptics_rmi4_set_input_device(struct synaptics_rmi4_data *rmi4_data
 	rmi4_data->input_dev->close = synaptics_rmi4_input_close;
 
 	input_set_drvdata(rmi4_data->input_dev, rmi4_data);
-#ifdef GLOVE_MODE
-	input_set_capability(rmi4_data->input_dev, EV_SW, SW_GLOVE);
-#endif
 	set_bit(EV_SYN, rmi4_data->input_dev->evbit);
 	set_bit(EV_KEY, rmi4_data->input_dev->evbit);
 	set_bit(EV_ABS, rmi4_data->input_dev->evbit);

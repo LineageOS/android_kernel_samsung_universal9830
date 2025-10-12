@@ -818,7 +818,6 @@
 #define SW_ROTATE_LOCK		0x0c  /* set = rotate locked/disabled */
 #define SW_LINEIN_INSERT	0x0d  /* set = inserted */
 #define SW_MUTE_DEVICE		0x0e  /* set = device disabled */
-#define SW_GLOVE		0x0f	/* set = glove mode */
 #define SW_MACHINE_COVER	0x10  /* set = cover closed */
 #define SW_HPHL_OVERCURRENT	0x11  /* set = over current on left hph */
 #define SW_HPHR_OVERCURRENT	0x12  /* set = over current on right hph */
