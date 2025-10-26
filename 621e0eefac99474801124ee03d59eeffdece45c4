@@ -34,6 +34,23 @@
       "parentUuid": "a36e410c_116afc9c",
       "revId": "621e0eefac99474801124ee03d59eeffdece45c4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "435fb7e9_deee1644",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35850
+      },
+      "writtenOn": "2025-10-26T15:53:47Z",
+      "side": 1,
+      "message": "@bgcngm@gmail.com Any idea how to get this going without disabling LTO?\nThe issue is that the includes use an absolute path hence the clang argument is too long for the shell to execute.",
+      "revId": "621e0eefac99474801124ee03d59eeffdece45c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
