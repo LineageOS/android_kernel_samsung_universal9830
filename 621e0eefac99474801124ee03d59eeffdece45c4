@@ -16,6 +16,24 @@
       "message": "As far as I know, no other device is doing this. At the very least you can ignore errors on the offending driver.",
       "revId": "621e0eefac99474801124ee03d59eeffdece45c4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "af2813f4_19dcaf51",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35850
+      },
+      "writtenOn": "2025-10-26T15:19:49Z",
+      "side": 1,
+      "message": "We couldn\u0027t get it to build at all with LTO.",
+      "parentUuid": "a36e410c_116afc9c",
+      "revId": "621e0eefac99474801124ee03d59eeffdece45c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
