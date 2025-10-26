@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a36e410c_116afc9c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-10-26T15:17:57Z",
+      "side": 1,
+      "message": "As far as I know, no other device is doing this. At the very least you can ignore errors on the offending driver.",
+      "revId": "621e0eefac99474801124ee03d59eeffdece45c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
