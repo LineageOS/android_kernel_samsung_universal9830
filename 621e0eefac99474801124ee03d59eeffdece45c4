@@ -69,6 +69,24 @@
       "parentUuid": "af2813f4_19dcaf51",
       "revId": "621e0eefac99474801124ee03d59eeffdece45c4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "34684372_e59a86aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-10-29T11:17:06Z",
+      "side": 1,
+      "message": "Not sure what you\u0027re talking about. Example of oneplus sm8350: https://github.com/LineageOS/android_kernel_oneplus_sm8350/blob/f975ff447a3199e026abe6817592f8ae3acf5ecc/arch/arm64/configs/vendor/lahaina-qgki_defconfig#L106\n\nAgain, did you try ignoring the errors specifically on the driver?",
+      "parentUuid": "12d912e1_7f1037f3",
+      "revId": "621e0eefac99474801124ee03d59eeffdece45c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
