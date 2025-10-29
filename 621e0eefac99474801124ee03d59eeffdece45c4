@@ -87,6 +87,24 @@
       "parentUuid": "12d912e1_7f1037f3",
       "revId": "621e0eefac99474801124ee03d59eeffdece45c4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed50ef7d_cc31ab9b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36094
+      },
+      "writtenOn": "2025-10-29T18:19:43Z",
+      "side": 1,
+      "message": "I tried ignoring LTO for the driver specifically, but it didn\u0027t work. Someone adapted the proper fix for this issue from Google 6.1 kernel to Xiaomi sm8250 4.19, and I can comfirm it works here. this will be abandoned.",
+      "parentUuid": "34684372_e59a86aa",
+      "revId": "621e0eefac99474801124ee03d59eeffdece45c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
