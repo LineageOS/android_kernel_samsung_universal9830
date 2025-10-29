@@ -51,6 +51,24 @@
       "message": "@bgcngm@gmail.com Any idea how to get this going without disabling LTO?\nThe issue is that the includes use an absolute path hence the clang argument is too long for the shell to execute.",
       "revId": "621e0eefac99474801124ee03d59eeffdece45c4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "12d912e1_7f1037f3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36094
+      },
+      "writtenOn": "2025-10-29T10:37:46Z",
+      "side": 1,
+      "message": "No devices that I have checked, which use qcacld3.0 driver have LTO enabled. r8s is the only device in this family to use qualcomm wifi IC. Only google has solved this issue with symlinking everything in the driver.",
+      "parentUuid": "af2813f4_19dcaf51",
+      "revId": "621e0eefac99474801124ee03d59eeffdece45c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
