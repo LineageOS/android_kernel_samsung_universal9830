@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2bab931c_36879374",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35667
+      },
+      "writtenOn": "2025-12-20T22:05:17Z",
+      "side": 1,
+      "message": "Removed whitespace, Hotspot now works",
+      "revId": "43c6abdd8176806fa958a9aa91d6cf93107319e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
