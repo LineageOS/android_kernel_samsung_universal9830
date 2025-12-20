@@ -33,6 +33,23 @@
       "message": "Why are you disabling the verifier for timestamp?",
       "revId": "43c6abdd8176806fa958a9aa91d6cf93107319e1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9915761e_0f12fe93",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35667
+      },
+      "writtenOn": "2025-12-20T22:38:11Z",
+      "side": 1,
+      "message": "I\u0027m not disabling it. I hit a \u0027duplicate case value\u0027 build error because offsetof(struct __sk_buff, tstamp) was already defined further down in net/core/filter.c (around line 8698)\n​The red lines in my diff are just me removing the redundant block I tried to add, so that I don\u0027t break the build. The verifier logic for timestamp is still there in the existing case block.",
+      "revId": "43c6abdd8176806fa958a9aa91d6cf93107319e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
