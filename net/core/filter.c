@@ -22,6 +22,7 @@
  */
 
 #include <linux/module.h>
+#include <linux/timekeeping.h>
 #include <linux/types.h>
 #include <linux/mm.h>
 #include <linux/fcntl.h>
@@ -1765,8 +1766,11 @@ static const struct bpf_func_proto bpf_skb_load_bytes_proto = {
 	.arg4_type	= ARG_CONST_SIZE,
 };
 
+extern const struct bpf_func_proto bpf_ktime_get_boot_ns_proto;
+
+
 BPF_CALL_4(bpf_flow_dissector_load_bytes,
-	   const struct bpf_flow_dissector *, ctx, u32, offset,
+	   const struct bpf_flow_dissector *, ctx, u32, offset
 	   void *, to, u32, len)
 {
 	void *ptr;
@@ -7174,6 +7178,8 @@ static const struct bpf_func_proto *
 tc_cls_act_func_proto(enum bpf_func_id func_id, const struct bpf_prog *prog)
 {
 	switch (func_id) {
+	case BPF_FUNC_ktime_get_boot_ns:
+		return &bpf_ktime_get_boot_ns_proto;
 	case BPF_FUNC_skb_store_bytes:
 		return &bpf_skb_store_bytes_proto;
 	case BPF_FUNC_skb_load_bytes:
@@ -8400,11 +8406,6 @@ static u32 bpf_convert_ctx_access(enum bpf_access_type type,
 						     target_size));
 		break;
 
-	case offsetof(struct __sk_buff, tstamp):
-		BUILD_BUG_ON(FIELD_SIZEOF(struct sk_buff, tstamp) != 8);
-		*insn++ = BPF_LDX_MEM(BPF_DW, si->dst_reg, si->src_reg,
-				      offsetof(struct sk_buff, tstamp));
-		break;
 	case offsetof(struct __sk_buff, priority):
 		if (type == BPF_WRITE)
 			*insn++ = BPF_STX_MEM(BPF_W, si->dst_reg, si->src_reg,
