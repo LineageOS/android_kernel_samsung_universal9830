@@ -8400,6 +8400,11 @@ static u32 bpf_convert_ctx_access(enum bpf_access_type type,
 						     target_size));
 		break;
 
+	case offsetof(struct __sk_buff, tstamp):
+		BUILD_BUG_ON(FIELD_SIZEOF(struct sk_buff, tstamp) != 8);
+		*insn++ = BPF_LDX_MEM(BPF_DW, si->dst_reg, si->src_reg,
+				      offsetof(struct sk_buff, tstamp));
+		break;
 	case offsetof(struct __sk_buff, priority):
 		if (type == BPF_WRITE)
 			*insn++ = BPF_STX_MEM(BPF_W, si->dst_reg, si->src_reg,
