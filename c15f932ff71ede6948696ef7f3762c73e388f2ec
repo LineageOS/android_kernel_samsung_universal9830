@@ -33,6 +33,23 @@
       "message": "CR-2: Not found anywhere in mainline or ACK, no idea where you got this from, looks AI made also.\n\nV-1: Hotspot still crashes.",
       "revId": "c15f932ff71ede6948696ef7f3762c73e388f2ec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5d63aa8_5ca4af0e",
+        "filename": "net/core/filter.c",
+        "patchSetId": 5
+      },
+      "lineNbr": 7181,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-12-21T10:28:38Z",
+      "side": 1,
+      "message": "this does nothing.\n\ntc_cls_act_func_proto -\u003e fallback to bpf_sk_base_func_proto\nbpf_sk_base_func_proto -\u003e fallback to bpf_base_func_proto\nbpf_base_func_proto handles `case BPF_FUNC_ktime_get_boot_ns:` and *same* value you used `extern` for returned.",
+      "revId": "c15f932ff71ede6948696ef7f3762c73e388f2ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
