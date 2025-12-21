@@ -16,6 +16,23 @@
       "message": "Everything works",
       "revId": "c15f932ff71ede6948696ef7f3762c73e388f2ec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4e7c12d_ee091aca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35850
+      },
+      "writtenOn": "2025-12-21T10:20:40Z",
+      "side": 1,
+      "message": "CR-2: Not found anywhere in mainline or ACK, no idea where you got this from, looks AI made also.\n\nV-1: Hotspot still crashes.",
+      "revId": "c15f932ff71ede6948696ef7f3762c73e388f2ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
