@@ -13,6 +13,11 @@ config SUPPORT_AFC
 	depends on EXYNOS_DECON_LCD && EXYNOS_DECON_MDNIE_LITE
 	default n
 
+config SUPPORT_ACCESSIBILITY
+	tristate "Support accessibility mDNIe function"
+	depends on EXYNOS_DECON_LCD && EXYNOS_DECON_MDNIE_LITE
+	default y
+
 config SUPPORT_ISC_TUNE_TEST
 	tristate "Support ISC TUNE TEST"
 	depends on EXYNOS_DECON_LCD

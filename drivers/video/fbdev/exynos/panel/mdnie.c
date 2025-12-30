@@ -1230,7 +1230,9 @@ static ssize_t afc_store(struct device *dev,
 struct device_attribute mdnie_dev_attrs[] = {
 	__PANEL_ATTR_RW(mode, 0664),
 	__PANEL_ATTR_RW(scenario, 0664),
+#ifdef CONFIG_SUPPORT_ACCESSIBILITY
 	__PANEL_ATTR_RW(accessibility, 0664),
+#endif
 	__PANEL_ATTR_RW(bypass, 0664),
 	__PANEL_ATTR_RW(lux, 0664),
 	__PANEL_ATTR_RO(mdnie, 0444),
