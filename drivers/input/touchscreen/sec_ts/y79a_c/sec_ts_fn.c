@@ -211,7 +211,9 @@ static struct sec_cmd sec_cmds[] = {
 	{SEC_CMD_H("ear_detect_enable", ear_detect_enable),},
 	{SEC_CMD("set_grip_data", set_grip_data),},
 	{SEC_CMD_H("external_noise_mode", external_noise_mode),},
+#ifdef CONFIG_SUPPORT_TS_240HZ
 	{SEC_CMD_H("set_scan_rate", set_scan_rate),},
+#endif
 	{SEC_CMD_H("brush_enable", brush_enable),},
 	{SEC_CMD_H("set_touchable_area", set_touchable_area),},
 	{SEC_CMD("set_log_level", set_log_level),},
@@ -227,7 +229,9 @@ static struct sec_cmd sec_cmds[] = {
 	{SEC_CMD_H("set_low_power_sensitivity", set_low_power_sensitivity),},	
 	{SEC_CMD("set_sip_mode", set_sip_mode),},
 	{SEC_CMD_H("set_note_mode", set_note_mode),},
+#ifdef CONFIG_SUPPORT_TS_240HZ
 	{SEC_CMD_H("set_game_mode", set_game_mode),},
+#endif
 	{SEC_CMD_H("sync_changed", sync_changed),},
 	{SEC_CMD("not_support_cmd", not_support_cmd),},
 };
