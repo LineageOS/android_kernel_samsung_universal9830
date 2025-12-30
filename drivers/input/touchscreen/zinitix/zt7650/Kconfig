@@ -9,3 +9,11 @@ config TOUCHSCREEN_ZINITIX_ZT7650
 	help
 	  Say Y here if you have a ZINITIX ZT7650 touchscreen.
 	  If unsure, say N.
+
+config CONFIG_SUPPORT_TS_240HZ
+	bool "Support High Touch-Polling-Rate"
+	depends on TOUCHSCREEN_ZINITIX_ZT7650
+	default n
+	help
+	  Say Y here if your ZINITIX ZT7650 touchscreen supports 240hz touch polling.
+	  If unsure, say N.

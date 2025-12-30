@@ -8749,10 +8749,14 @@ static struct sec_cmd sec_cmds[] = {
 	{SEC_CMD("check_connection", check_connection),},
 	{SEC_CMD("run_prox_intensity_read_all", run_prox_intensity_read_all),},
 	{SEC_CMD_H("ear_detect_enable", ear_detect_enable),},
+#ifdef CONFIG_SUPPORT_TS_240HZ
 	{SEC_CMD_H("set_scan_rate", set_scan_rate),},
+#endif
 	{SEC_CMD_H("set_wirelesscharger_mode", set_wirelesscharger_mode),},
 	{SEC_CMD_H("set_note_mode", set_note_mode),},
+#ifdef CONFIG_SUPPORT_TS_240HZ
 	{SEC_CMD_H("set_game_mode", set_game_mode),},
+#endif
 	{SEC_CMD("read_osc_value", read_osc_value),},
 	{SEC_CMD_H("set_sip_mode", set_sip_mode),},
 	{SEC_CMD("not_support_cmd", not_support_cmd),},
