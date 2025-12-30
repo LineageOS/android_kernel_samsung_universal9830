@@ -290,7 +290,9 @@ struct sec_cmd ft_commands[] = {
 	{SEC_CMD_H("pocket_mode_enable", pocket_mode_enable),},
 	{SEC_CMD("set_sip_mode", set_sip_mode),},
 	{SEC_CMD_H("set_note_mode", set_note_mode),},
+#ifdef CONFIG_SUPPORT_TS_240HZ
 	{SEC_CMD("set_game_mode", set_game_mode),},
+#endif
 	{SEC_CMD("not_support_cmd", not_support_cmd),},
 };
 
