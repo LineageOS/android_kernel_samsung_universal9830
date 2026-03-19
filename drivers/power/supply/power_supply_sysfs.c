@@ -407,7 +407,6 @@ static struct device_attribute power_supply_attrs[] = {
 	POWER_SUPPLY_ATTR(power_design),
 	POWER_SUPPLY_ATTR(filter_cfg),
 	POWER_SUPPLY_ATTR(afc_charger_mode),
-	POWER_SUPPLY_ATTR(fuelgauge_reset),
 };
 
 static struct attribute *
