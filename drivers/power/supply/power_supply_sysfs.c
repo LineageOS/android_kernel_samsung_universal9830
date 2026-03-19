@@ -84,29 +84,6 @@ static const char * const power_supply_scope_text[] = {
 	"Unknown", "System", "Device"
 };
 
-static const char * const power_supply_usbc_text[] = {
-	"Nothing attached", "Sink attached", "Powered cable w/ sink",
-	"Debug Accessory", "Audio Adapter", "Powered cable w/o sink",
-	"Source attached (default current)",
-	"Source attached (medium current)",
-	"Source attached (high current)",
-	"Debug Accessory Mode (default current)",
-	"Debug Accessory Mode (medium current)",
-	"Debug Accessory Mode (high current)",
-	"Non compliant",
-	"Non compliant (Rp-Default/Rp-Default)",
-	"Non compliant (Rp-1.5A/Rp-1.5A)",
-	"Non compliant (Rp-3A/Rp-3A)"
-};
-
-static const char * const power_supply_usbc_pr_text[] = {
-	"none", "dual power role", "sink", "source"
-};
-
-static const char * const power_supply_typec_src_rp_text[] = {
-	"Rp-Default", "Rp-1.5A", "Rp-3A"
-};
-
 static ssize_t power_supply_show_property(struct device *dev,
 					  struct device_attribute *attr,
 					  char *buf) {

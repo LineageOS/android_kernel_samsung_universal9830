@@ -502,45 +502,6 @@ enum power_supply_type {
 	POWER_SUPPLY_TYPE_MAX,
 };
 
-/* Indicates USB Type-C CC connection status */
-enum power_supply_typec_mode {
-	POWER_SUPPLY_TYPEC_NONE,
-
-	/* Acting as source */
-	POWER_SUPPLY_TYPEC_SINK,		/* Rd only */
-	POWER_SUPPLY_TYPEC_SINK_POWERED_CABLE,	/* Rd/Ra */
-	POWER_SUPPLY_TYPEC_SINK_DEBUG_ACCESSORY,/* Rd/Rd */
-	POWER_SUPPLY_TYPEC_SINK_AUDIO_ADAPTER,	/* Ra/Ra */
-	POWER_SUPPLY_TYPEC_POWERED_CABLE_ONLY,	/* Ra only */
-
-	/* Acting as sink */
-	POWER_SUPPLY_TYPEC_SOURCE_DEFAULT,	/* Rp default */
-	POWER_SUPPLY_TYPEC_SOURCE_MEDIUM,	/* Rp 1.5A */
-	POWER_SUPPLY_TYPEC_SOURCE_HIGH,		/* Rp 3A */
-	POWER_SUPPLY_TYPEC_DAM_DEFAULT,		/* Rp-1.5A/Rp-3A */
-	POWER_SUPPLY_TYPEC_DAM_MEDIUM,		/* Rp-Default/Rp-1.5A */
-	POWER_SUPPLY_TYPEC_DAM_HIGH,		/* Rp-Default/Rp-3A */
-
-	/* Non Compliant */
-	POWER_SUPPLY_TYPEC_NON_COMPLIANT,
-	POWER_SUPPLY_TYPEC_RP_STD_STD,		/* Rp-Default/Rp-Default */
-	POWER_SUPPLY_TYPEC_RP_MED_MED,		/* Rp-1.5A/Rp-1.5A */
-	POWER_SUPPLY_TYPEC_RP_HIGH_HIGH,	/* Rp-3A/Rp-3A */
-};
-
-enum power_supply_typec_src_rp {
-	POWER_SUPPLY_TYPEC_SRC_RP_STD,
-	POWER_SUPPLY_TYPEC_SRC_RP_1P5A,
-	POWER_SUPPLY_TYPEC_SRC_RP_3A
-};
-
-enum power_supply_typec_power_role {
-	POWER_SUPPLY_TYPEC_PR_NONE,		/* CC lines in high-Z */
-	POWER_SUPPLY_TYPEC_PR_DUAL,
-	POWER_SUPPLY_TYPEC_PR_SINK,
-	POWER_SUPPLY_TYPEC_PR_SOURCE,
-};
-
 enum power_supply_notifier_events {
 	PSY_EVENT_PROP_CHANGED,
 };
