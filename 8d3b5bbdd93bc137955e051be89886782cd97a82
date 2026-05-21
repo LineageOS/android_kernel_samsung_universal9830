@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bce756ed_a0c48fda",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36094
+      },
+      "writtenOn": "2026-05-21T12:29:08Z",
+      "side": 1,
+      "message": "The commit author differs between commit on here vs the .patch file linked in the mentioned issue in gitlab, why is that? Also, I can just pick the commit from r8q, which matches the logic used in zinitix driver already, with proper authorship.",
+      "revId": "8d3b5bbdd93bc137955e051be89886782cd97a82",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
