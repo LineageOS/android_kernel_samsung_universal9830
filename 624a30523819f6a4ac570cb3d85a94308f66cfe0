@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "79fd10b4_025909d5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-05-21T10:56:16Z",
+      "side": 1,
+      "message": "Comment removed by: Łukasz Patron; Reason: incomplete msg",
+      "revId": "624a30523819f6a4ac570cb3d85a94308f66cfe0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
