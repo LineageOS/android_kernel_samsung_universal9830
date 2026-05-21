@@ -16,6 +16,24 @@
       "message": "The commit author differs between commit on here vs the .patch file linked in the mentioned issue in gitlab, why is that? Also, I can just pick the commit from r8q, which matches the logic used in zinitix driver already, with proper authorship.",
       "revId": "8d3b5bbdd93bc137955e051be89886782cd97a82",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49b334af_6c493562",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37069
+      },
+      "writtenOn": "2026-05-21T13:05:11Z",
+      "side": 1,
+      "message": "Replied there.\n\nWhat about r8q? The kernel for that [doesn\u0027t patch that](https://github.com/LineageOS/android_kernel_samsung_sm8250/blob/afb0085a5dd6b91adab29ed2e96b87028b28b04b/drivers/input/touchscreen/stm/fts5cu56a/fts_ts.c#L1847) unless I am missing something.",
+      "parentUuid": "bce756ed_a0c48fda",
+      "revId": "8d3b5bbdd93bc137955e051be89886782cd97a82",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
