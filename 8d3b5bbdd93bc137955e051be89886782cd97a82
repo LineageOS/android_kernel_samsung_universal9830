@@ -52,6 +52,24 @@
       "parentUuid": "49b334af_6c493562",
       "revId": "8d3b5bbdd93bc137955e051be89886782cd97a82",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c22db032_16fe4f0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36094
+      },
+      "writtenOn": "2026-05-21T13:15:36Z",
+      "side": 1,
+      "message": "It does with this logic instead:\nhttps://github.com/LineageOS/android_kernel_samsung_sm8250/commit/441c9309d04e8ac549e06d4dc313c0fd12b1fa4b",
+      "parentUuid": "49b334af_6c493562",
+      "revId": "8d3b5bbdd93bc137955e051be89886782cd97a82",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
