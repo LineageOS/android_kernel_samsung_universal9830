@@ -67,7 +67,7 @@ void secdbg_comm_log_disable(int type)
 
 void secdbg_comm_log_once(int type)
 {
-	if (atomic64_read(&(ac_idx[type].logging_entry)))
+	if (atomic_read(&(ac_idx[type].logging_entry)))
 		secdbg_comm_log_disable(type);
 	else
 		atomic_inc(&(ac_idx[type].logging_entry));
@@ -78,14 +78,14 @@ static void secdbg_comm_print_log(int type, const char *buf, size_t size)
 	struct sec_debug_auto_comm_buf *p = &auto_comment_info->auto_comm_buf[type];
 	unsigned int offset = p->offset;
 
-	if (atomic64_read(&(ac_idx[type].logging_disable)))
+	if (atomic_read(&(ac_idx[type].logging_disable)))
 		return;
 
 	if (offset + size > SZ_4K)
 		return;
 
 	if (init_data[type].max_count &&
-	    (atomic64_read(&(ac_idx[type].logging_count)) > init_data[type].max_count))
+	    (atomic_read(&(ac_idx[type].logging_count)) > init_data[type].max_count))
 		return;
 
 	if (!(auto_comment_info->fault_flag & (1 << type))) {
