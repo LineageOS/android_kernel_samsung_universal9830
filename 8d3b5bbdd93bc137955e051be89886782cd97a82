@@ -122,6 +122,24 @@
       "message": "bump? is it so hard to approve/decline a 1 line diff? not even a [3 line diff](https://www.openbsd.org/lyrics.html#62)",
       "revId": "8d3b5bbdd93bc137955e051be89886782cd97a82",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1969c49_5739dcd8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36094
+      },
+      "writtenOn": "2026-08-26T11:24:26Z",
+      "side": 1,
+      "message": "Sorry for absence. I just tested this logic on my Zinitix TSP equipped r8s and there, it would cause a regression in how proximity works. This is because 0cm is defined as the near value and anything above it is reported as far value. While this solution gives more granular output from proximity sensor, it is much harder to make it report 0cm (near) value even when an object is right on top of the screen. This also only makes hover proximity work, while touch proximity becomes nonfunctional in my testing.",
+      "parentUuid": "fea73a66_34ad0f87",
+      "revId": "8d3b5bbdd93bc137955e051be89886782cd97a82",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
