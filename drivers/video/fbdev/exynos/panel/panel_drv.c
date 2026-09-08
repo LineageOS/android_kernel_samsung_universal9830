@@ -4306,7 +4306,7 @@ static int panel_tdmb_notifier_callback(struct notifier_block *nb,
 	return 0;
 }
 #endif
-
+#if 0
 #if defined(CONFIG_INPUT_TOUCHSCREEN)
 static int panel_input_notifier_callback(struct notifier_block *nb,
 		unsigned long data, void *v)
@@ -4330,6 +4330,7 @@ static int panel_input_notifier_callback(struct notifier_block *nb,
 	}
 	return 0;
 }
+#endif
 #endif
 
 #if defined(CONFIG_SEC_FACTORY) && defined(CONFIG_SUPPORT_FAST_DISCHARGE)
@@ -4492,9 +4493,11 @@ static int panel_drv_probe(struct platform_device *pdev)
 		goto probe_err;
 	}
 #endif
+#if 0
 #if defined(CONFIG_INPUT_TOUCHSCREEN)
 	sec_input_register_notify(&panel->input_notif,
 			panel_input_notifier_callback, 3);
+#endif
 #endif
 	panel->nr_dim_flash_result = 0;
 	panel->max_nr_dim_flash_result = 0;
