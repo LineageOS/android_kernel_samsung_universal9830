@@ -58,8 +58,12 @@
 
 #include "../../../../iommu/exynos-iommu.h"
 
-#define DECON_4K_RESOLUTION_HEIGHT 3200
 #define DECON_4K_RESOLUTION_WIDTH  1440
+#if CONFIG_MODEL_C2S
+#define DECON_4K_RESOLUTION_HEIGHT 3088
+#else
+#define DECON_4K_RESOLUTION_HEIGHT 3200
+#endif
 
 int decon_log_level = 6;
 module_param(decon_log_level, int, 0644);
