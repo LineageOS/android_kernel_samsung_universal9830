@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c7378db_745cb94e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37069
+      },
+      "writtenOn": "2026-09-12T12:09:54Z",
+      "side": 1,
+      "message": "Sorry for absense. utACK (to all patches): no longer own device.\n\nIt is not exactly clear how *everything* goes together. So the \"force enable\" patch enables an actual proximity sensor instead of the touch emulation? I have figured the hardware does not exist based on the stock driver before, or is at least unused. In the latter case, I am not sure how this would work out for sweatshop clones of panels. Just to be clear, by \"stock driver\" I mean the one in this tree before any LOS specific changes.\n\nCode quality itself LGTM, although I am no expert at that.",
+      "revId": "8c92d176d2b779b8cc7429c73f74da50ee5d8cf0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
