@@ -1127,6 +1127,10 @@ static int __mfc_enc_get_ctrl_val(struct mfc_ctx *ctx, struct v4l2_control *ctrl
 	case V4L2_CID_MPEG_VIDEO_QOS_RATIO:
 		ctrl->value = ctx->qos_ratio;
 		break;
+	case V4L2_CID_MPEG_VIDEO_PRIORITY:
+		ctrl->value = ctx->prio;
+		mfc_debug(2, "[PRIO] user get priority: %d\n", ctrl->value);
+		break;
 	case V4L2_CID_MPEG_MFC_GET_EXT_INFO:
 		ctrl->value = __mfc_enc_ext_info(ctx);
 		break;
@@ -2017,6 +2021,14 @@ static int __mfc_enc_set_ctrl_val(struct mfc_ctx *ctx, struct v4l2_control *ctrl
 		break;
 	case V4L2_CID_MPEG_VIDEO_QOS_RATIO:
 		ctx->qos_ratio = ctrl->value;
+		break;
+	case V4L2_CID_MPEG_VIDEO_PRIORITY:
+		ctx->prio = ctrl->value;
+		mfc_debug(2, "[PRIO] user set priority: %d\n", ctrl->value);
+		break;
+	case V4L2_CID_MPEG_MFC51_VIDEO_FRAME_RATE:
+		ctx->operating_framerate = ctrl->value;
+		mfc_debug(2, "[QoS] user set operating frame rate: %d\n", ctrl->value);
 		break;
 	case V4L2_CID_MPEG_VIDEO_H264_MAX_QP:
 	case V4L2_CID_MPEG_VIDEO_H263_MAX_QP:
